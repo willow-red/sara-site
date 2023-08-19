@@ -1,13 +1,23 @@
-:root {
+body{
   --bg: #F9F4E9;
   --proj-window-bg: #EAE2CF;
   --text: black;
   --theme-red: #F14F4F;
   --theme-yellow: #F1D74F;
   --theme-green: #84D7AF;
-}
-body{
   background-color: var(--bg);
+  color: var(--text);
+}
+/*dark mode*/
+body.darkMode{
+  --bg: #1C1D26;
+  --proj-window-bg: #21222D;
+  --text: #F2E5BC;
+  --theme-red: #F42C3E;
+  --theme-yellow: #F6B92E;
+  --theme-green: #7ABA6A;
+  background-color: var(--bg);
+  color: var(--text);
 }
 .App {
   font-family: 'Azeret Mono', monospace;

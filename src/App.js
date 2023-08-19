@@ -5,7 +5,6 @@ import Nav from './Nav';
 import About from './About';
 import Home from './Home';
 import Footer from './Footer';
-import Stripe from './Stripe';
 function App() {
   return (
     <div className="App container">
