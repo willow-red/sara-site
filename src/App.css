@@ -1,29 +1,28 @@
-body{
+:root {
   --bg: #F9F4E9;
   --proj-window-bg: #EAE2CF;
   --text: black;
   --theme-red: #F14F4F;
-  --theme-yellow: #F1D74F;
+  --theme-yellow: #F1D74F; 
   --theme-green: #84D7AF;
-  background-color: var(--bg);
-  color: var(--text);
 }
 /*dark mode*/
-body.darkMode{
-  --bg: #1C1D26;
-  --proj-window-bg: #21222D;
+[data-theme="dark"] {
+  --bg: #262732;
+  --proj-window-bg: #3D3F4D;
   --text: #F2E5BC;
   --theme-red: #F42C3E;
   --theme-yellow: #F6B92E;
   --theme-green: #7ABA6A;
+}
+body{
   background-color: var(--bg);
   color: var(--text);
 }
 .App {
   font-family: 'Azeret Mono', monospace;
   justify-content: center;
-  background: none;
-  padding: 8% 15% 8%;
+  padding: 5% 8% 3%;
 }
 /*Nav Elements*/
 @keyframes underlineOn {
@@ -214,4 +213,64 @@ body.darkMode{
 #about h4{
   font-size: larger;
   margin: 1em 0 1em 0;
+}
+/* Custom Dark Mode Toggle Element */
+.toggle-theme-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.toggle-theme-wrapper span {
+  font-size: 28px;
+}
+
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  height: 34px;
+  width: 60px;
+}
+
+.toggle-theme input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.2s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+input:checked + .slider {
+  background-color: cornflowerblue;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
