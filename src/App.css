@@ -182,13 +182,11 @@ body{
 #home a{
   color: var(--text);
 }
-#home h1{
+#homeHeader{
+  height: 3.5em;
   text-shadow: 1.5px 1.5px 0px var(--theme-red), 
     3px 3px 0px var(--theme-yellow), 
     4.5px 4.5px 0px var(--theme-green);
-}
-#homeHeader{
-  height: 3.5em;
 }
 /*footer*/
 #footer{
@@ -213,6 +211,9 @@ body{
 #about h4{
   font-size: larger;
   margin: 1em 0 1em 0;
+}
+.desProjectLink{
+  text-decoration: none;
 }
 /* Custom Dark Mode Toggle Element */
 .toggle-theme-wrapper {
@@ -273,4 +274,12 @@ input:checked + .slider {
 
 .slider.round:before {
   border-radius: 50%;
+}
+/*Design project*/
+.design-project-header-info{
+  font-size: medium;
+  opacity: 0.5;
+}
+.design-project-link{
+  color: black;
 }
