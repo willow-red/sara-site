@@ -107,6 +107,54 @@ export default function Nav() {
                         timeline="Jun 2021-Jul 2021"
                         tools="Adobe Illustrator, Adobe InDesign, Internet"
                     />} />
+                    <Route path="/design/USCStudentLife" element={<DesignProject
+                        title="USC Student Life"
+                        mainImg="studentLifeSlides/studentLife.png"
+                        link="https://www.instagram.com/uscstudentlife/?hl=en"
+                        summary="Graphics and content for USC Student Life and the USC student community."
+                        role="Graphic Designer"
+                        timeline="Mar 2022-Present"
+                        tools="Figma, Adobe Illustrator, Procreate"
+                        p1Header="About"
+                        p1="USC Student Life encompasses all things relating to student experience at USC. This includes
+                         events, social media, and resources. My role in Student Life has largely centered around 
+                         social media content and marketing, as well as creating assets for events, websites, and merchandise."
+                        p1Img="studentLifeSlides/studentLife1.png"
+                    />} />
+                    <Route path="/design/terrascape" element={<DesignProject
+                        title="TerraScape"
+                        mainImg="terrascapeSlides/terrascapeWide.png"
+                        summary="Speculative design for an environmental simulation editor."
+                        role="UI Designer"
+                        timeline="Sep 2023-Oct 2023"
+                        tools="Blender, Figma, Adobe Photoshop"
+                        p1Header="About"
+                        p1="TerraScape is a conceptual environment-building program that is used to create
+                         a simulation of the natural world. As a planet, we do not prioritize nature when it comes to day to day life, which has resulted in
+                         endless pollution in the name of convenience and economy. This project exemplifies what may happen 
+                         in the future if we continue on this path. A future in which the only way we can experience the majesty
+                          of nature is in simulations, as the existing versions would no longer be beautiful.
+                           I use images from my own trips to national parks, 3D modeling, and UI design to create an
+                            interface that would be used to build out a custom environment which can then be experienced in a simulation by the user."
+                        p1Img="terrascapeSlides/ui.JPG"
+                        p2Header="Ideation"
+                        p2="My initial sketch and concept was inspired by artist Kristoffer Zetterstrand and designer GMUNK.
+                        These images were taken by me during a roadtrip to Banff and Jasper national parks in Alberta, Canada. Their immense beauty is what
+                         sparks my passion in protecting our natural world."
+                        p2Img="terrascapeSlides/ui1.png"
+                        p3Header="Modeling"
+                        p3="TerraScape is a program that combines 2D photo editing, 3D modeling, and scripting to create a simulated world. To demonstrate the
+                         proposed construction of these simulated environments, I created a 3D diorama that utilized my 2-dimensional images in a 3-dimensional space.
+                         Users would be able to collage together images of environmental settings to be converted to a 3D model, which could then be experienced in VR.
+                          To create the model, I imported my cut-up images into Blender and constructed the land how I wanted. I also added a larger body of water."
+                        p3Img="terrascapeSlides/ui2.png"
+                        p4Header="UI Design"
+                        p4="The rest of the project consisted of designing the interface of TerraScape. I used Figma,
+                         and was largely inspired by the UIs of Photoshop, Blender, and VSCode. This process was conceptual exciting,
+                         as I was designing the software of the future, that could be used to create worlds. I added final touches with
+                          Photoshop to emulate the glow and slight distortion of an LCD screen."
+                        p4Img="terrascapeSlides/ui3.png"
+                    />} />
                     <Route path="/about" element={<About />} />
                     <Route path="*" element={<Home />} />
                 </Routes>
