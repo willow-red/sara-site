@@ -6,7 +6,9 @@ export function load() {
 			image: projectSummaries.image,
 			title: projectSummaries.title,
             summary: projectSummaries.summary,
-            tags: projectSummaries.tags
+            tags: projectSummaries.tags,
+			slug: projectSummaries.slug,
+			colors: projectSummaries.colors
 		}))
 	};
 }

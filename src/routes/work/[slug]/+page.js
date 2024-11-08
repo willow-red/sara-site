@@ -1,12 +1,12 @@
 import { error } from '@sveltejs/kit';
-import { posts } from '../data.js';
+import { projectSummaries } from '../../projectSummaries.js';
 
 export function load({ params }) {
-	const post = posts.find((post) => post.slug === params.slug);
+	const summary = projectSummaries.find((projectSummaries) => projectSummaries.slug === params.slug);
 
-	if (!post) throw error(404);
+	if (!summary) throw error(404);
 
 	return {
-		post
+		summary
 	};
 }

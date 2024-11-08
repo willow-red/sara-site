@@ -5,10 +5,10 @@
   	import "../app.css";
 </script>
 
-<div class="app p-4 pb-10 min-h-full bg-gray-950 text-gray-200">
+<div class="app pb-10 min-h-full bg-gray-950 text-gray-200">
 	<Header />
 
-	<main class="m-2 md:m-8 md:mx-28">
+	<main class="p-2 md:px-28">
 		<slot />
 	</main>
 

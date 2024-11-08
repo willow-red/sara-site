@@ -2,13 +2,13 @@
 	export let data;
 </script>
 
-<div class="layout">
+<div class="m-0">
 	<main>
 		<slot />
 	</main>
 
 	<aside>
-		<h2>More posts</h2>
+		<h2>Also see...</h2>
 		<ul>
 			{#each data.summaries as { slug, title }}
 				<li>
@@ -18,13 +18,3 @@
 		</ul>
 	</aside>
 </div>
-
-<style>
-	@media (min-width: 640px) {
-		.layout {
-			display: grid;
-			gap: 2em;
-			grid-template-columns: 1fr 16em;
-		}
-	}
-</style>
