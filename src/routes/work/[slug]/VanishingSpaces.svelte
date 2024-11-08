@@ -101,7 +101,7 @@
 		with the spaces and their corresponding artifacts.
 	</p>
 	<div class="flex md:flex-row flex-col px-4">
-		<div class="flex-1 me-16 p-5 card-static">
+		<div class="flex-1 md:me-16 p-5 card-static mb-4">
 			<h3 class="font-bold text-2xl">An Interactive Tour Experience</h3>
 			<hr class=" my-2 opacity-25" />
 			<ul class="list-disc list-inside text-gray-300 leading-relaxed">
@@ -193,7 +193,7 @@
 		the brief our clients had provided.
 	</p>
 	<div class="flex md:flex-row flex-col px-4 mb-8">
-		<div class="flex-1 me-12 p-5 card-static">
+		<div class="flex-1 md:me-12 p-5 card-static mb-4">
 			<h4 class="text-xl mb-2 font-bold">Mapping the Gay Guides</h4>
 			<p class="text-gray-300 text-sm mb-2">
 				Longstanding travel guide showing LGBTQ+ businesses in the U.S.
@@ -213,7 +213,7 @@
 				“overview first, zoom and filter, details-on-demand”.
 			</p>
 		</div>
-		<div class="flex-1 me-12 p-5 card-static">
+		<div class="flex-1 md:me-12 p-5 card-static mb-4">
 			<h4 class="text-xl mb-2 font-bold">HistoryPin</h4>
 			<p class="text-gray-300 text-sm mb-2">
 				Explore communities with local history— people across the U.S.
@@ -234,7 +234,7 @@
 				sections take up more screen space than necessary.
 			</p>
 		</div>
-		<div class="flex-1 me-12 p-5 card-static">
+		<div class="flex-1 md:me-12 p-5 card-static">
 			<h4 class="text-xl mb-2 font-bold">ArcGIS StoryMaps</h4>
 			<p class="text-gray-300 text-sm mb-2">
 				Web tool for telling historical stories with geographical
@@ -263,7 +263,7 @@
 		for:
 	</p>
 	<div class="flex md:flex-row flex-col px-4 mb-8">
-		<div class="flex-1 me-12 p-5 card-static">
+		<div class="flex-1 md:me-12 p-5 card-static mb-4">
 			<img
 				src={Jordan}
 				alt=""
@@ -288,7 +288,7 @@
 				<span class="font-semibold">Themes:</span> Learning and Understanding.
 			</p>
 		</div>
-		<div class="flex-1 me-12 p-5 card-static">
+		<div class="flex-1 md:me-12 p-5 card-static mb-4">
 			<img
 				src={Sam}
 				alt=""
@@ -361,7 +361,7 @@
 		Informed by our client brief, research insights, and personas, we
 		created a site map and layout sketches.
 	</p>
-	<div class="grid grid-cols-2 gap-12 justify-around">
+	<div class="grid md:grid-cols-2 gap-12 md:justify-around">
 		<div>
 			<h3 class="mono uppercase mb-2 text-xl">Site Architecture</h3>
 			<hr class="opacity-50 mb-4" />
@@ -369,7 +369,7 @@
 				src={Architecture}
 				alt="Site architecture diagram."
 				loading="lazy"
-				class="rounded-sm mb-8 max-w-sm"
+				class="rounded-sm mb-8 md:max-w-sm"
 			/>
 			<p class="mb-2 mono uppercase">Thought Process:</p>
 			<p class="text-gray-300">
@@ -387,19 +387,19 @@
 				src={Landing}
 				alt="Landing page wireframe."
 				loading="lazy"
-				class="rounded-sm mb-4 max-w-lg"
+				class="rounded-sm mb-4 md:max-w-lg"
 			/>
 			<img
 				src={Map}
 				alt="Map page wireframe."
 				loading="lazy"
-				class="rounded-sm mb-4 max-w-lg"
+				class="rounded-sm mb-4 md:max-w-lg"
 			/>
 			<img
 				src={Tour}
 				alt="Guided tour page wireframe."
 				loading="lazy"
-				class="rounded-sm mb-4 max-w-lg"
+				class="rounded-sm mb-4 md:max-w-lg"
 			/>
 		</div>
 	</div>
@@ -417,13 +417,13 @@
 <div class="py-8 md:py-12">
 	<p class="text-sm text-gray-400">Bringing the Vision to Life</p>
 	<h3 class="mono uppercase mb-4 text-xl">Final Design Recommendations</h3>
-	<div class="grid grid-cols-2 gap-12 justify-around">
+	<div class="grid md:grid-cols-2 gap-12 md:justify-around">
 		<div>
 			<img
 				src={MobileFigma}
 				alt="Prototype screens of the mobile view."
 				loading="lazy"
-				class="rounded-sm mb-4 max-w-lg"
+				class="rounded-sm mb-4 md:max-w-lg"
 			/>
 			<img
 				src={MobilePrototype}
@@ -437,7 +437,7 @@
 				src={DesktopFigma}
 				alt="Prototype screens of the desktop view."
 				loading="lazy"
-				class="rounded-sm mb-4 max-w-lg"
+				class="rounded-sm mb-4 md:max-w-lg"
 			/>
 			<img
 				src={Prototype}

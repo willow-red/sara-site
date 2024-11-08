@@ -7,7 +7,7 @@
 	<div class="basis-1/4">
 		<p class="font-bold">WORK WITH SARA</p>
 		<p class="mb-2 text-gray-300">Have a project in mind? Let's get in touch!</p>
-		<a href="mailto:saraalva7gonz@gmail.com" class="py-1 px-12 border-solid border transition ease-in-out hover:bg-gray-900 rounded-sm">Contact</a>
+		<a href="mailto:saraalva7gonz@gmail.com" class="py-1 px-12 border-solid border transition ease-in-out hover:bg-gray-900 rounded-sm mb-4">Contact</a>
 	</div>
 	<div class="basis-1/4">
 		<p class="font-bold">SITEMAP</p>

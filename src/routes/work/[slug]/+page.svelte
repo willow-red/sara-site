@@ -5,8 +5,8 @@
 
 
 <!-- hero section -->
-<div class="noise-bg z-10"></div>
-<div class="hero-gradient" style="background: linear-gradient(160deg, {data.summary.colors[0]} 0%, {data.summary.colors[1]} 19%, {data.summary.colors[2]} 55%, {data.summary.colors[3]} 100%);"></div>
+<div class="noise-bg z-10 hidden md:block"></div>
+<div class="hero-gradient hidden md:block" style="background: linear-gradient(160deg, {data.summary.colors[0]} 0%, {data.summary.colors[1]} 19%, {data.summary.colors[2]} 55%, {data.summary.colors[3]} 100%);"></div>
 <div class="z-20 relative m-4 md:mx-12 text-right mb-12">
 	<div class="grid md:grid-cols-5 gap-2 items-center">
 		<!-- project image -->
@@ -29,7 +29,7 @@
 	</div>
 	<hr class="my-8 opacity-50" />
 	<!-- project information -->
-	<div class="grid md:grid-cols-5 gap-8 text-left mx-8 justify-items-center">
+	<div class="grid md:grid-cols-5 gap-8 text-left mx-8 md:justify-items-center">
 		<div class="col-span-1">
 			<h2 class="mono uppercase font-semibold text-lg">ROLE</h2>
 			<p class="details">{data.summary.role}</p>

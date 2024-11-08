@@ -23,7 +23,7 @@
 		<p class="text-gray-300">I love art, computers, and the internet. In my free time, I enjoy gaming, listening to music, and working on my personal websites such as this one ^_^</p>
 		<hr class="my-8 opacity-50"/>
 		<h3 class="text-2xl underline mb-4 emphasis">Contact + Links</h3>
-		<ul class="list-none text-gray-300">
+		<ul class="list-none text-gray-300 mb-4">
 			<li><a href="mailto:saraalva7gonz@gmail.com" class="underline">saraalva7gonz@gmail.com</a></li>
 			<li><a href="https://www.linkedin.com/in/saraalva7/" class="underline">LinkedIn</a></li>
 			<li><a href="https://github.com/willow-red" class="underline">GitHub</a></li>

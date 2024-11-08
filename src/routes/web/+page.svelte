@@ -9,7 +9,7 @@
 <h1 class="text-4xl mb-4 uppercase mono">Web Projects</h1>
 <hr class="mb-8" />
 <!--projects section-->
-<div class="grid grid-cols-2 gap-4">
+<div class="grid md:grid-cols-2 gap-4">
 	{#each data.projects as { image, link, dates, title, content, tech }}
 		<a
 			href={link}
@@ -19,7 +19,7 @@
 		>
 			<div class="flex card items-center gap-4">
 				{#await import(`$lib/images/${image}.jpg`) then { default: src }}
-					<img {src} alt={title} class="max-w-48 rounded-sm" />
+					<img {src} alt={title} class="max-w-32 md:max-w-48 rounded-sm" />
 				{/await}
 				<div>
 					<p class="text-xs text-gray-400">{dates}</p>
