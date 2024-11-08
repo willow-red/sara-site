@@ -2,7 +2,7 @@
 	import Header from './Header.svelte';
 	import Footer from './Footer.svelte';
 	import './styles.css';
-  	import "../app.css";
+	import '../App.css';
 </script>
 
 <div class="app pb-10 min-h-full bg-gray-950 text-gray-200">
