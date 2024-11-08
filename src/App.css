@@ -1,285 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*Fonts*/
+@font-face {
+	font-family: Orbiter;
+	src: url(./lib/fonts/TASAOrbiterText-Regular.otf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: Orbiter;
+	src: url(./lib/fonts/TASAOrbiterText-Medium.otf);
+	font-weight: 500;
+}
+@font-face {
+	font-family: Orbiter;
+	src: url(./lib/fonts/TASAOrbiterText-SemiBold.otf);
+	font-weight: 600;
+}
+@font-face {
+	font-family: Orbiter;
+	src: url(./lib/fonts/TASAOrbiterText-Bold.otf);
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Apple Garamond";
+	src: url(./lib/fonts/AppleGaramond.ttf);
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Apple Garamond";
+	src: url(./lib/fonts/AppleGaramond-Italic.ttf);
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face{
+	font-family: "Luxi Mono";
+	src: url(./lib/fonts/luximr.ttf);
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: "Luxi Mono";
+	src: url(./lib/fonts/luximri.ttf);
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face{
+	font-family: "Luxi Mono";
+	src: url(./lib/fonts/luximb.ttf);
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face{
+	font-family: "Luxi Mono";
+	src: url(./lib/fonts/luximbi.ttf);
+	font-weight: 600;
+	font-style: italic;
+}
+
 :root {
-  --bg: #F9F4E9;
-  --proj-window-bg: #EAE2CF;
-  --text: black;
-  --theme-red: #F14F4F;
-  --theme-yellow: #F1D74F; 
-  --theme-green: #84D7AF;
-}
-/*dark mode*/
-[data-theme="dark"] {
-  --bg: #262732;
-  --proj-window-bg: #3D3F4D;
-  --text: #F2E5BC;
-  --theme-red: #F42C3E;
-  --theme-yellow: #F6B92E;
-  --theme-green: #7ABA6A;
-}
-body{
-  background-color: var(--bg);
-  color: var(--text);
-}
-.App {
-  font-family: 'Azeret Mono', monospace;
-  justify-content: center;
-  padding: 5% 8% 3%;
-}
-/*Nav Elements*/
-@keyframes underlineOn {
-  from {text-decoration: none;}
-  to{text-decoration:underline;
-    text-decoration-color: var(--text);}
-}
-@keyframes underlineOff {
-  from {text-decoration: underline;
-    text-decoration-color: var(--text);}
-  to {text-decoration: none;}
-}
-.NavBar{
-  background-color: none;
-}
-.navItem{
-  color: var(--text);
-  text-decoration: none;
-  display: block;
-  font-size: 0.93em;
-}
-.navItem:hover{
-  animation-name: underlineOn;
-  animation-duration: 0.5s;
-  text-decoration: underline;
-  text-decoration-color: var(--text);
-}
-.navItem:not(:hover){
-  animation-name: underlineOff;
-  animation-duration: 0.5s;
-}
-/*Project Elements*/
-@keyframes dropShadowOn {
-  from {box-shadow: none}
-  to {box-shadow: 6px 6px 0 var(--text);}
-}
-@keyframes dropShadowOff {
-  from {box-shadow: 6px 6px 0 var(--text);}
-  to {box-shadow: none;}
-}
-.contentContainer{
-  background-color: none;
-}
-.project{
-  background-color: var(--proj-window-bg);
-  border: 2px solid var(--text);
-  border-radius: 15px;
-  color: var(--text);
-}
-.project:hover{
-  animation-name: dropShadowOn;
-  animation-duration: 0.5s;
-  box-shadow: 6px 6px 0 var(--text);
-}
-.project:not(:hover){
-  animation-name: dropShadowOff;
-  animation-duration: 0.5s;
-}
-.projectImg{
-  border: 2px solid var(--text);
-  border-left: none;
-  border-right: none;
-}
-.projectTopBar{
-  height: 2em;
-  padding-left: 0.5em;
-}
-.topBarCircle{
-  height: 1em;
-  width: 1em;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 3px;
-  margin-top: 0.5em;
-  border: 1.5px solid var(--text);
-}
-.projectHeader{
-  font-size:larger;
-  font-weight: bold;
-  margin-bottom: 0.1em;
-}
-.projectSubHeader{
-  font-size: medium;
-  font-weight: medium;
-  margin-bottom: 0.1em;
-}
-.projectDescription{
-  font-size:small;
-}
-.projectTech{
-  font-size: small;
-  font-weight:lighter;
-  height: 24px;
-  line-height:24px;
-}
-.projectLine{
-  height: 1px;
-  background-color: var(--text);
-  margin-bottom: 1.3em;
-}
-/*sprite*/
-@keyframes linkDarkHoverOn {
-  from {filter: brightness(100%);}
-  to {filter: brightness(70%);}
-}
-@keyframes linkDarkHoverOff {
-  from {filter: brightness(70%);}
-  to {filter: brightness(100%);}
-}
-.linkDark:hover{
-  animation-name: linkDarkHoverOn;
-  animation-duration: 0.3s;
-  filter: brightness(70%);
-}
-.linkDark:not(:hover){
-  animation-name: linkDarkHoverOff;
-  animation-duration: 0.3s;
-}
-@keyframes linkHoverOn {
-  from {opacity: 100%}
-  to {opacity: 50%;}
-}
-@keyframes linkHoverOff {
-  from {opacity: 50%;}
-  to {opacity: 100%;}
-}
-.link:hover{
-  animation-name: linkHoverOn;
-  animation-duration: 0.3s;
-  opacity: 50%;
-  cursor: pointer;
-}
-.link:not(:hover){
-  animation-name: linkHoverOff;
-  animation-duration: 0.3s;
-}
-.emailSprite {
-  background: url('./assets/icons.svg') no-repeat -70px -13px;
-	width: 25px;
-	height: 19px;
-}
-.githubSprite{
-	background: url('./assets/icons.svg') no-repeat -6px -9px;
-	width: 24px;
-	height: 23px;
-}
-.linkedInSprite{
-  background: url('./assets/icons.svg') no-repeat -38px -6px;
-	width: 25px;
-	height: 24px;
-}
-.emptySprite{
-	width: 24px;
-	height: 23px;
-}
-/*home*/
-#home a{
-  color: var(--text);
-}
-#homeHeader{
-  height: 3.5em;
-  text-shadow: 1.5px 1.5px 0px var(--theme-red), 
-    3px 3px 0px var(--theme-yellow), 
-    4.5px 4.5px 0px var(--theme-green);
-}
-/*footer*/
-#footer{
-  font-size: smaller;
-}
-.footerStripe{
-  height: 0.8em;
-}
-.headerStripe{
-  height:0.3em;
-}
-#footer a{
-  color: var(--text);
-}
-/*about*/
-#about p, #about li{
-  font-size: 0.93em;
-}
-#about a{
-  color: var(--text);
-}
-#about h4{
-  font-size: larger;
-  margin: 1em 0 1em 0;
-}
-.desProjectLink{
-  text-decoration: none;
-}
-/* Custom Dark Mode Toggle Element */
-.toggle-theme-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 4px;
+	--font-body: Orbiter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: var(--font-body);
 }
 
-.toggle-theme-wrapper span {
-  font-size: 28px;
+body {
+	background-color: #0c0a09;
 }
 
-.toggle-theme {
-  position: relative;
-  display: inline-block;
-  height: 34px;
-  width: 60px;
+/*Custom Classes*/
+.mono {
+	font-family: "Luxi Mono", monospace;
 }
-
-.toggle-theme input {
-  display: none;
+.serif {
+	font-family: "Apple Garamond", serif;
+	font-style: normal;
 }
-
-.slider {
-  background-color: #ccc;
-  position: absolute;
-  cursor: pointer;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  transition: 0.2s;
+.emphasis {
+	font-family: "Apple Garamond", serif;
+	font-style: italic;
 }
-
-.slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 26px;
+.card {
+	@apply p-5 border border-transparent transition ease-linear rounded-sm
 }
-
-input:checked + .slider:before {
-  transform: translateX(26px);
+.card:hover {
+	@apply bg-gray-800 bg-opacity-50 border-gray-200 border-opacity-50
 }
-
-input:checked + .slider {
-  background-color: cornflowerblue;
+.card-link {
+	@apply transition-transform ease-linear
 }
-
-.slider.round {
-  border-radius: 34px;
+.card:hover .card-link {
+	@apply translate-x-1 -translate-y-1
 }
-
-.slider.round:before {
-  border-radius: 50%;
+.card-static{
+	@apply border border-gray-200 border-opacity-50 rounded-sm bg-gray-800 bg-opacity-50
 }
-/*Design project*/
-.design-project-header-info{
-  font-size: medium;
-  opacity: 0.5;
+.noise-bg {
+	background-image: url("https://assets-global.website-files.com/61233686e9da0579abde1edb/6360c794af347dfff85bd7e5_noise.png");
+	background-position: center;
+	background-size: auto;
+	opacity: 0.5;
+	@apply absolute w-full h-full left-0 top-0 bottom-0 right-0
 }
-.design-project-link{
-  color: black;
+.hero-gradient {
+	@apply absolute w-full h-full left-0 top-0 bottom-0 right-0
 }
