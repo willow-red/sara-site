@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import resume from "$lib/files/SaraAlvarado2024.pdf";
+	import resume from "$lib/files/SaraAlvarado2025Resume.pdf";
 </script>
 <hr class="mt-8">
 <footer class="text-sm text-center md:text-left md:flex flex-row justify-center pt-8">
@@ -32,7 +32,7 @@
 	<div class="basis-1/4">
 		<p class="font-bold">COLOPHON</p>
 		<p class="text-gray-300">Website by Sara Alvarado.</p>
-		<p class="text-gray-300">Copyright © 2024. All rights reserved.</p>
+		<p class="text-gray-300">Copyright © 2025. All rights reserved.</p>
 		<p class="text-gray-300">Software: SvelteKit, Tailwind CSS.</p>
 		<p class="text-gray-300">Typeface: TASA Orbiter, Apple Garamond, Luxi Mono.</p>
 	</div>

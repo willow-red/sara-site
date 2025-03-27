@@ -1,5 +1,12 @@
 export const experience = [
 	{
+        link: 'https://servicelearning.washington.edu/',
+		dates: '2025—Present',
+		title: 'Frontend Developer — UW School of Medicine Service Learning',
+		content:
+			'Develops and maintains a Next.js and React-based web application, improving accessibility, performance, and user experience. Translates Figma wireframes into responsive UI components, implementing modern UI/UX best practices. Collaborates with designers and stakeholders, manages Git workflows and CI/CD pipelines, and proactively improves the platform weekly.'
+	},
+    {
         link: 'https://www.washington.edu/accesstech/',
 		dates: '2024—Present',
 		title: 'Web Accessibility Assistant — UW Information Technology',
