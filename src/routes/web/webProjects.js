@@ -2,7 +2,7 @@ export const webProjects = [
 	{
         image: 'growthTracker',
         link: 'https://chromewebstore.google.com/detail/growth-tracker/pkbbochahepbkpkkidbhhdjhmjafgncm',
-		dates: '★ 4k+ Installs',
+		dates: '★ 5k+ Installs',
 		title: 'Growth Tracker',
 		content:
 			'Plant-themed journal and mood tracker browser extension for Chrome and Firefox.',

@@ -1,7 +1,7 @@
 @import '@fontsource/fira-mono';
 @font-face {
 	font-family: Orbiter;
-	src: url(../../static/fonts/TASAOrbiterText-Regular.otf);
+	src: url(../lib/fonts/TASAOrbiterText-Regular.otf);
   }
 
 :root {
@@ -21,11 +21,13 @@ body {
 }
 a {
 	color: var(--color-theme-1);
-	text-decoration: none;
 }
 
-a:hover {
-	text-decoration: underline;
+footer a, header a {
+	@apply transition ease-linear underline
+}
+footer a:hover, header a:hover {
+	@apply text-gray-400
 }
 
 

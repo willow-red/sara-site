@@ -11,25 +11,18 @@
 <!--projects section-->
 <div class="grid md:grid-cols-2 gap-4">
 	{#each data.projects as { image, link, dates, title, content, tech }}
-		<a
-			href={link}
-			target="_blank"
-			rel="noreferrer"
-			class="hover:no-underline"
-		>
 			<div class="flex card items-center gap-4">
 				{#await import(`$lib/images/${image}.jpg`) then { default: src }}
 					<img {src} alt={title} class="max-w-32 md:max-w-48 rounded-sm" />
 				{/await}
 				<div>
 					<p class="text-xs text-gray-400">{dates}</p>
-					<p class="text-base font-semibold mb-1 text-gray-200">
-						{title} <span class="card-link inline-block">↗</span>
+					<p class="text-base font-semibold mb-1 text-gray-200"><a href={link} rel="noreferrer" class="card-link-name">
+						{title} <span class="card-link inline-block">↗</span></a>
 					</p>
 					<p class="text-gray-300 text-sm mb-1">{content}</p>
 					<p class="text-xs mono uppercase text-gray-400">{tech}</p>
 				</div>
 			</div>
-		</a>
 	{/each}
 </div>

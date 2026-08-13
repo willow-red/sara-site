@@ -4,13 +4,13 @@ export const projectSummaries = [
 		title: 'UW ALACRITY Center',
 		summary: 'User-informed redesign of UW ALACRITY\'s website, a multidisciplinary team of experts from mental health, implementation science (IS), and human-centered design (HCD) focused on overcoming obstacles that prevent quality mental health interventions from reaching historically marginalized groups.',
 		tags: 'Client Work // User Research',
-		slug: 'UWAC',
+		slug: 'alacrity',
 		role: 'UX Researcher',
-		timeline: 'Jun 2024 — Present',
+		timeline: 'Sep 2024 — Dec 2024',
 		team: ['Sara Alvarado', 'Derek Lee', 'Katelyn Hoang', 'Lia Mar-Lundeen', 'Tricia Aung'],
 		skills: ['User Research', 'Prototyping'],
 		tools: ['FigJam', 'Figma', 'WordPress'],
-		colors: ['#95B7B0', '#435C63', '#784D70', '#372934']
+		colors: ['#95B7B0', '#435C63', '#613258', '#1b0e18']
 	},
 	{
         image: 'VanishingSpacesThumbnail',

@@ -1,13 +1,13 @@
 <script>
 	import { page } from '$app/stores';
-	import resume from "$lib/files/SaraAlvarado2025Resume.pdf";
+	import resume from "$lib/files/SaraAlvarado2026Resume.pdf";
 </script>
 <hr class="mt-8">
 <footer class="text-sm text-center md:text-left md:flex flex-row justify-center pt-8">
 	<div class="basis-1/4">
 		<p class="font-bold">WORK WITH SARA</p>
-		<p class="mb-2 text-gray-300">Have a project in mind? Let's get in touch!</p>
-		<a href="mailto:saraalva7gonz@gmail.com" class="py-1 px-12 border-solid border transition ease-in-out hover:bg-gray-900 rounded-sm mb-4">Contact</a>
+		<p class="mb-3 text-gray-300">Have a project in mind? Let's get in touch!</p>
+		<a href="mailto:saraalva7gonz@gmail.com" class="py-1 px-12 border-solid border transition ease-in-out hover:bg-gray-900 rounded-sm no-underline">Contact</a>
 	</div>
 	<div class="basis-1/4">
 		<p class="font-bold">SITEMAP</p>
@@ -32,7 +32,7 @@
 	<div class="basis-1/4">
 		<p class="font-bold">COLOPHON</p>
 		<p class="text-gray-300">Website by Sara Alvarado.</p>
-		<p class="text-gray-300">Copyright © 2025. All rights reserved.</p>
+		<p class="text-gray-300">Copyright © 2026. All rights reserved.</p>
 		<p class="text-gray-300">Software: SvelteKit, Tailwind CSS.</p>
 		<p class="text-gray-300">Typeface: TASA Orbiter, Apple Garamond, Luxi Mono.</p>
 	</div>

@@ -1,17 +1,24 @@
 export const experience = [
+    {
+        link: 'https://www.portseattle.org/',
+        dates: '2025—Present',
+        title: 'Web Accessibility Specialist — Port of Seattle',
+        content:
+            'Ensures Port of Seattle web content meets accessibility standards by testing WCAG 2.1 AA guidelines using industry-standard accessibility tools. Reviews and remediates content in Drupal CMS for accessibility, including alt text, semantic HTML structure, and expected functionality for assistive technology and keyboard users. Uses Microsoft Word and Excel to document compliance checks, create accessibility audit reports, and track remediation progress. Contributes to the team\'s inclusive content strategy by conducting accessibility workshops and maintaining compliance documentation and resources.'
+    },
 	{
         link: 'https://servicelearning.washington.edu/',
-		dates: '2025—Present',
+		dates: '2025',
 		title: 'Frontend Developer — UW School of Medicine Service Learning',
 		content:
-			'Develops and maintains a Next.js and React-based web application, improving accessibility, performance, and user experience. Translates Figma wireframes into responsive UI components, implementing modern UI/UX best practices. Collaborates with designers and stakeholders, manages Git workflows and CI/CD pipelines, and proactively improves the platform weekly.'
+			'Developed and maintained a Next.js and React-based web application, improving accessibility, performance, and user experience. Translated Figma wireframes into responsive UI components, implementing modern UI/UX best practices. Collaborated with designers and stakeholders, managed Git workflows and CI/CD pipelines, and proactively improved the platform weekly.'
 	},
     {
         link: 'https://www.washington.edu/accesstech/',
-		dates: '2024—Present',
+		dates: '2024—2025',
 		title: 'Web Accessibility Assistant — UW Information Technology',
 		content:
-			'Conducts accessibility testing on university websites using a variety of evaluation tools to ensure compliance with WCAG 2.1 standards. Collaborates with developers and websit owners to identify and implement accessibility improvements, utilizing WordPress, Drupal, and other content management systems. Applies strong proficiency in HTML, CSS, and JavaScript to diagnose and resolve web accessibility issues, resulting in improvement in website usability for individuals with disabilities.'
+			'Conducted accessibility testing on university websites using a variety of evaluation tools to ensure compliance with WCAG 2.1 standards. Collaborated with developers and website owners to identify and implement accessibility improvements, utilizing WordPress, Drupal, and other content management systems. Applied strong proficiency in HTML, CSS, and JavaScript to diagnose and resolve web accessibility issues, resulting in improvement in website usability for individuals with disabilities.'
 	},
     {
         link: 'https://itp.usc.edu',

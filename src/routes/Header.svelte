@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import resume from "$lib/files/SaraAlvarado2025Resume.pdf";
+	import resume from "$lib/files/SaraAlvarado2026Resume.pdf";
 </script>
 
 <header>

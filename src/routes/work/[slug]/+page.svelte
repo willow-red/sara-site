@@ -1,4 +1,5 @@
 <script>
+	import Alacrity from "./Alacrity.svelte";
 	import VanishingSpaces from "./VanishingSpaces.svelte";
 	export let data;
 </script>
@@ -60,6 +61,8 @@
 </div>
 {#if data.summary.slug === "vanishing-spaces"}
 	<VanishingSpaces />
+{:else if data.summary.slug === "alacrity"}
+	<Alacrity />
 {:else}
 	<p>Coming Soon!</p>
 {/if}
